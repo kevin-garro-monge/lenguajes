@@ -174,30 +174,35 @@ body {
   width: 30rem;
   box-shadow: inset -8px -8px 12px #ffffff, inset 8px 8px 12px #a3b1c6;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
 }
 
 .info-menu {
   font-size: 1.5rem;
   color: rgb(48, 48, 48);
-  flex: 70%;
   text-align: center;
-  margin-top: 20rem;
+  padding-top: 1rem;
 }
 
 .button {
-  flex: 30%;
+  flex: 0 0 25%;
   border: none;
-  background-color: rgb(72, 72, 241);
+  background-color: rgb(48, 48, 48);
   border-radius: 2.5rem;
-  width: 80%;
+  width: 90%;
   color: #fff;
   font-size: 2rem;
   transition: all 0.2s;
 }
 .button:hover {
   transform: translateY(-5px);
+}
+
+.icon {
+  height: 7rem;
+  width: 7rem;
+  fill: rgb(72, 72, 241);
 }

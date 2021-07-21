@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Inter";
+  font-family: "Roboto Condensed";
   font-size: 2.2rem;
 }
 
@@ -21,6 +21,7 @@ body {
   width: 30%;
   color: #fff;
   line-height: 1.5;
+  font-weight: 700;
 }
 
 .heading-secundario {
@@ -157,5 +158,46 @@ body {
 /*MENU*/
 .menu {
   position: absolute;
-  height: 90vh;
+  height: 100%;
+  background-color: #e0e5ec;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn-menu {
+  background-color: #e0e5ec;
+  color: #fff;
+  border-radius: 2.5rem;
+  height: 30rem;
+  width: 30rem;
+  box-shadow: inset -8px -8px 12px #ffffff, inset 8px 8px 12px #a3b1c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.info-menu {
+  font-size: 1.5rem;
+  color: rgb(48, 48, 48);
+  flex: 70%;
+  text-align: center;
+  margin-top: 20rem;
+}
+
+.button {
+  flex: 30%;
+  border: none;
+  background-color: rgb(72, 72, 241);
+  border-radius: 2.5rem;
+  width: 80%;
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.2s;
+}
+.button:hover {
+  transform: translateY(-5px);
 }

@@ -6,12 +6,17 @@ $connetion = oci_connect('HR','123','orcl');
 
 if(isset($_POST['IniciarSecion']))
 {
- echo
  
-$variableCualquera
+ 
 
-$CORREO = $_POST['iCorreo'];
-$PASS = $_POST['iPass'];
+try{
+ $CORREO = $_POST['iCorreo'];
+$PASS = $_POST['iPass']; 
+}catch(exeption $e){
+  echo 'Excepción capturada: ',  $e->getMessage(), "\n";
+}
+
+echo '1'
 
 
 $stid = oci_parse($conn, 'begin :r := LOGIN(:CORREO, :PASS); end;');

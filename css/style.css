@@ -151,8 +151,8 @@ body {
 
 .hidden {
   opacity: 0;
-  display: none;
-  transition: all 1s;
+  visibility: hidden;
+  transition: all 0.5s;
 }
 
 /*MENU*/

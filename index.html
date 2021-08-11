@@ -17,7 +17,7 @@
   <body>
     <nav class="nav"><h1 class="heading-primario">Banco el Generico</h1></nav>
     <section class="seccion-inicio">
-      <div class="inicio">
+      <div class="inicio hidden">
         <div class="bienvenida">
           <h2 class="heading-secundario">Bienvenido a Banco Generico!</h2>
           <figure class="logo">
@@ -38,7 +38,7 @@
             id="usuario"
             name="usuario"
             type="text"
-            class="heading-tercero input"
+            class="heading-tercero input input-user"
             required
           />
           <label for="cont">Contraseña</label>
@@ -46,10 +46,10 @@
             id="Contraseña"
             name="cont"
             type="text"
-            class="heading-tercero input"
+            class="heading-tercero input input-password"
             required
           />
-          <button class="btn btn-login">Iniciar sesión</button>
+          <button class="btn btn-login check-login">Iniciar sesión</button>
         </div>
       </div>
 
@@ -61,7 +61,7 @@
             id="nombre"
             name="nombre"
             type="text"
-            class="heading-tercero input"
+            class="heading-tercero input input-name"
             required
           />
           <label for="apellido">Apellido</label>
@@ -69,7 +69,7 @@
             id="apellido"
             name="apellido"
             type="text"
-            class="heading-tercero input"
+            class="heading-tercero input input-secondName"
             required
           />
           <label for="cont">Contraseña</label>
@@ -77,7 +77,7 @@
             id="cont"
             name="cont"
             type="text"
-            class="heading-tercero input"
+            class="heading-tercero input input-nPassword"
             required
           />
           <label for="confirma">Confirmar Contraseña</label>
@@ -85,13 +85,13 @@
             id="confirma"
             name="confirma"
             type="text"
-            class="heading-tercero input"
+            class="heading-tercero input input-checkP"
             required
           />
-          <button class="btn btn-registrarse">Registrate</button>
+          <button class="btn btn-registrarse check-register">Registrate</button>
         </div>
       </div>
-      <div class="menu">
+      <!-- <div class="menu hidden">
         <div class="btn-menu">
           <p class="info-menu">
             Realiza sus transacciones sin comisión con nosotros
@@ -117,6 +117,86 @@
             <use xlink:href="img/iconos.svg#icon-history"></use>
           </svg>
           <button class="button">Cuenta bancaria</button>
+        </div>
+      </div> -->
+
+      <div class="menu">
+        <div class="menu-info">
+          <div class="movements">
+            <div class="movements-item">
+              <h3 class="date">Fecha</h3>
+              <div class="movement-type">
+                <h4>Tipo</h4>
+                <h4>5000</h4>
+              </div>
+            </div>
+            <div class="movements-item">
+              <h3 class="date">Fecha</h3>
+              <div class="movement-type">
+                <h4>Tipo</h4>
+                <h4>5000</h4>
+              </div>
+            </div>
+            <div class="movements-item">
+              <h3 class="date">Fecha</h3>
+              <div class="movement-type">
+                <h4>Tipo</h4>
+                <h4>5000</h4>
+              </div>
+            </div>
+            <div class="movements-item">
+              <h3 class="date">Fecha</h3>
+              <div class="movement-type">
+                <h4>Tipo</h4>
+                <h4>5000</h4>
+              </div>
+            </div>
+            <div class="movements-item">
+              <h3 class="date">Fecha</h3>
+              <div class="movement-type">
+                <h4>Tipo</h4>
+                <h4>5000</h4>
+              </div>
+            </div>
+            <div class="movements-item">
+              <h3 class="date">Fecha</h3>
+              <div class="movement-type">
+                <h4>Tipo</h4>
+                <h4>5000</h4>
+              </div>
+            </div>
+            <div class="movements-item">
+              <h3 class="date">Fecha</h3>
+              <div class="movement-type">
+                <h4>Tipo</h4>
+                <h4>5000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="transactions">
+            <h2 class="heading-transaction">Realizar Transacción</h2>
+            <form class="transactions-menu">
+              <div class="input-container">
+                <label for="idUser" name="idUser" class="label"
+                  >Id de usuario:</label
+                >
+                <input type="text" id="idUser" class="input-form" />
+              </div>
+              <div class="input-container">
+                <label for="monto" name="monto" class="label"
+                  >Monto en 💵:</label
+                >
+                <input type="text" id="monto" class="input-form" />
+              </div>
+
+              <button type="submit" class="btn-form">Enviar</button>
+            </form>
+          </div>
+
+          <div class="estado-container">
+            <h2 class="heading-menu">Estado de Cuenta</h2>
+            <div class="estado"></div>
+          </div>
         </div>
       </div>
     </section>

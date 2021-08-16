@@ -71,3 +71,9 @@ document.addEventListener("click", function (e) {
     removeHidden(tipo, true);
   }
 });
+
+document.querySelector(".btn-close").addEventListener("click", function (e) {
+  e.preventDefault();
+  mainSection.classList.add("hidden");
+  startSection.classList.remove("hidden");
+});

@@ -28,13 +28,10 @@ const removeHidden = function (clase, x = false) {
   }
 };
 
-const loggedIn = () => {
-  startSection.classList.add("hidden");
-  mainSection.classList.remove("hidden");
-};
-
 ///////////////////////////////////////////
 //LOGIN
+
+//FUNCION PARA ENTRAR A LA CUENTA
 const enterAccount = () => {
   enterLogin.addEventListener("click", function (e) {
     const user = inputUser.value;
@@ -46,16 +43,17 @@ const enterAccount = () => {
     const checkLogin = cuentas.filter((ele) => {
       if (ele.user === user && ele.password === pass) return ele;
     });
-    // console.log(checkLogin);
+
     if (checkLogin.length === 1) {
+      //Aqui se validan los datos si coinciden se agregan al array de checkLogin y si este tiene un tamaño igual a 1 significa que si se validaron
       currentUser.push(checkLogin[0]);
-      removeHidden(".overlay-login");
-      loggedIn();
+      //Redireccion a la otra pagina
+      window.location.href = "./mainPage.html";
     }
   });
 };
 
-//check-register
+//FUNCION PARA QUE SE DESPLIEGUE EL LOGIN Y REGISTRO
 
 document.addEventListener("click", function (e) {
   console.log(e.target);
@@ -70,10 +68,4 @@ document.addEventListener("click", function (e) {
     const { tipo } = e.target.dataset;
     removeHidden(tipo, true);
   }
-});
-
-document.querySelector(".btn-close").addEventListener("click", function (e) {
-  e.preventDefault();
-  mainSection.classList.add("hidden");
-  startSection.classList.remove("hidden");
 });

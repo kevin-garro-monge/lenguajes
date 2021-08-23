@@ -121,7 +121,7 @@ body {
   font-size: 2rem;
   background-color: #fff;
   border-radius: 5px;
-  margin: 10rem auto;
+  margin: 0.5rem auto;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -131,6 +131,7 @@ body {
   box-shadow: 0 1rem 3rem 1rem rgba(0, 0, 0, 0.427);
   opacity: 1;
   transition: all 1s;
+  flex-wrap: wrap;
 }
 
 .input {
@@ -138,7 +139,7 @@ body {
   outline: none;
   border: none;
   background-color: rgb(199, 199, 199);
-  border-radius: 10rem;
+  border-radius: 5rem;
   padding: 0.5rem 1rem;
 }
 .input:last-of-type {
@@ -200,7 +201,7 @@ body {
 }
 .button:hover {
   transform: translateY(-5px);
-}
+}registrarse
 
 .icon {
   height: 7rem;
@@ -323,6 +324,14 @@ body {
   background: linear-gradient(to right, rgb(89, 59, 255), rgb(120, 56, 240));
   height: 30rem;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+.input_estado {
+  width: 40%;
 }
 
 .btn-close {

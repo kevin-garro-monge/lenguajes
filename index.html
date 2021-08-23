@@ -17,7 +17,7 @@
   <body>
     <nav class="nav"><h1 class="heading-primario">Banco el Generico</h1></nav>
     <section class="seccion-inicio">
-      <div class="inicio hidden">
+      <div class="inicio">
         <div class="bienvenida">
           <h2 class="heading-secundario">Bienvenido a Banco Generico!</h2>
           <figure class="logo">
@@ -64,13 +64,19 @@
             class="heading-tercero input input-name"
             required
           />
-          <label for="apellido">Apellido</label>
+          <label for="apellido">Apellido 1</label>
           <input
             id="apellido"
             name="apellido"
             type="text"
             class="heading-tercero input input-secondName"
-            required
+          />
+          <label for="apellido">Apellido 2</label>
+          <input
+            id="apellido"
+            name="apellido"
+            type="text"
+            class="heading-tercero input input-secondName"
           />
           <label for="cont">Contraseña</label>
           <input
@@ -81,6 +87,30 @@
             required
           />
           <label for="confirma">Confirmar Contraseña</label>
+          <input
+            id="confirma"
+            name="confirma"
+            type="text"
+            class="heading-tercero input input-checkP"
+            required
+          />
+          <label for="confirma">Cédula</label>
+          <input
+            id="confirma"
+            name="confirma"
+            type="text"
+            class="heading-tercero input input-checkP"
+            required
+          />
+          <label for="confirma">Teléfono</label>
+          <input
+            id="confirma"
+            name="confirma"
+            type="text"
+            class="heading-tercero input input-checkP"
+            required
+          />
+          <label for="confirma">Email</label>
           <input
             id="confirma"
             name="confirma"
@@ -120,7 +150,7 @@
         </div>
       </div> -->
 
-      <div class="menu">
+      <div class="menu hidden">
         <div class="menu-info">
           <div class="movements">
             <div class="movements-item">
@@ -195,7 +225,24 @@
 
           <div class="estado-container">
             <h2 class="heading-menu">Estado de Cuenta</h2>
-            <div class="estado"></div>
+            <div class="estado">
+              Cedula
+              <input class="input_estado" type="text" />
+              Clave
+
+              <input class="input_estado" type="text" />
+              Usuario
+              <input class="input_estado" type="text" />
+              Primer Apellido
+              <input class="input_estado" type="text" />
+              Segundo Apellido
+              <input class="input_estado" type="text" />
+              Teléfono
+              <input class="input_estado" type="text" />
+              Email
+              <input class="input_estado" type="text" />
+              <!-- <button class="btn-actualizar cuenta"></button> -->
+            </div>
           </div>
           <button class="btn btn-close">Cerrar sesión</button>
         </div>

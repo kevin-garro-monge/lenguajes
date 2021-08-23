@@ -1,17 +1,17 @@
 <?php
 
-$connetion = oci_connect('HR','123','orcl');
+$connetion = oci_connect('BANCO','SYSTEM123','ORCL');
  //echo '<script language="javascript">alert("BIENVENIDO ");
   //window.location.href="login.php"</script>';
 
-if(isset($_POST['IniciarSecion']))
+if(isset($_POST['iLogin']))
 {
  
  
 
 try{
- $CORREO = $_POST['iCorreo'];
-$PASS = $_POST['iPass']; 
+ $CORREO = $_POST['usuario'];
+$PASS = $_POST['cont']; 
 }catch(exeption $e){
   echo 'Excepción capturada: ',  $e->getMessage(), "\n";
 }

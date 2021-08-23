@@ -1,7 +1,7 @@
 <?php
 
 // Aquí Kevin debes usar tus credenciales de SQL Developer
-$conn = oci_connect('HR','123','ORCL');
+$conn = oci_connect('BANCO','SYSTEM123','ORCL');
 
 if (!$conn) {
   // echo '1';
@@ -9,7 +9,7 @@ if (!$conn) {
   //  trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
 
-$stid = oci_parse($conn, 'SELECT * FROM employees');
+$stid = oci_parse($conn, 'SELECT * FROM USUARIO');
 
 oci_execute($stid);
 

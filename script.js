@@ -59,7 +59,7 @@ document.addEventListener("click", function (e) {
   console.log(e.target);
   if (e.target.closest(".btn-login")) {
     removeHidden(".overlay-login");
-    enterAccount();
+    // enterAccount();
   }
   if (e.target.closest(".btn-registrarse")) {
     removeHidden(".overlay-register");

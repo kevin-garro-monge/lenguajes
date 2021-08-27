@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <script src="script.js" defer></script>
+    <form action="inicioSecion.php" method="post" >
   </head>
   <body>
     <nav class="nav"><h1 class="heading-primario">Banco el Generico</h1></nav>
@@ -21,7 +22,7 @@
         <div class="bienvenida">
           <h2 class="heading-secundario">Bienvenido a Banco Generico!</h2>
           <figure class="logo">
-            <img src="img/banco.jpeg" alt="Logo Banco Generico" />
+            <img src="img/logo.png" alt="Logo Banco Generico" />
           </figure>
           <h3 class="heading-tercero">Registrate si aún no tienes cuenta</h3>
         </div>
@@ -31,27 +32,17 @@
         </div>
       </div>
       <div class="overlay overlay-login hidden">
+        <form method="POST" action="inicioSesion.php">
         <div class="login">
           <button class="cerrar" data-tipo=".overlay-login">X</button>
           <label for="usuario">Usuario</label>
-          <input
-            id="usuario"
-            name="usuario"
-            type="text"
-            class="heading-tercero input input-user"
-            required
-          />
+          <input id="usuario" name="usuario" type="text" class="heading-tercero input input-user"  />
           <label for="cont">Contraseña</label>
-          <input
-            id="Contraseña"
-            name="cont"
-            type="text"
-            class="heading-tercero input input-password"
-            required
-          />
+          <input id="Contraseña" name="cont" type="text" class="heading-tercero input input-password"  />
           <button class="btn btn-login check-login" name="iLogin">
             Iniciar sesión
           </button>
+        </form>
         </div>
       </div>
       <!-- <button class="btn-entrar">Entrar</button> -->

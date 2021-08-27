@@ -12,7 +12,7 @@ if (!$conn) {
  
 }
 
-$stid = oci_parse($conn, 'SELECT * FROM HISTORIAL_TRANSACION WHERE id_usuario = :comp ');
+$stid = oci_parse($conn, 'SELECT * FROM HISTORIAL_TRANSACION WHERE id_usuario = :comp');
 oci_bind_by_name($stid, ':comp', $ID);
 
 oci_execute($stid);
@@ -27,7 +27,5 @@ while ($row = oci_fetch_array($stid, OCI_ASSOC+OCI_RETURN_NULLS)) {
 }
 echo "</table>\n";
 
-
-echo json_encode($row);
 
 ?>

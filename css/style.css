@@ -97,7 +97,7 @@ body {
   background-color: rgba(72, 72, 241, 0.808);
 }
 .btn-registrarse:hover {
-  background-color: orangered;
+  background-color: #000;
 }
 
 .cerrar {
@@ -263,6 +263,7 @@ body {
 }
 .date {
   flex: 1;
+  font-weight: 500;
 }
 
 /*TRANSACCIONES*/
@@ -336,9 +337,11 @@ body {
   row-gap: 0.5rem;
   padding: 1rem 2rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .input_estado {
-  width: 40%;
+  justify-self: center;
+  width: 30%;
 }
 
 .btn-close {
@@ -360,6 +363,24 @@ body {
 .withdrawl {
   color: rgb(233, 22, 22);
 }
+.saldo {
+  height: 10%;
+  /* width: 30%; date*/
+}
+.btn-actualizar {
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: rgb(46, 20, 163);
+  font-size: 2rem;
+  width: 20%;
+  padding: 1rem 2rem;
+  transition: all 0.2s;
+}
+.btn-actualizar:hover {
+  background-color: rgb(16, 7, 54);
+  color: #fff;
+}
 
 @media only screen and (max-width: 1075px) {
   html {
@@ -375,6 +396,9 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
+  .nav {
+    height: auto;
+  }
   .menu-info {
     grid-template-columns: min-content min-content 1fr;
     grid-template-rows: repeat(4, 1fr) 8rem;
@@ -400,6 +424,7 @@ body {
     justify-self: center;
     grid-column: 1/5;
     grid-row: 4/5;
+    height: 100%;
   }
   .estado {
     row-gap: 1rem;

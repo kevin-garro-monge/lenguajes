@@ -6,6 +6,20 @@ document.querySelector(".btn-close").addEventListener("click", function (e) {
   //   startSection.classList.remove("hidden");
 });
 
+const fecha = () => {
+  document.querySelectorAll(".date").forEach((e) => {
+    console.log(e);
+    const fechaHoy = new Date();
+
+    const day = fechaHoy.getDate();
+    const month = fechaHoy.getMonth();
+    const year = fechaHoy.getFullYear();
+
+    e.innerHTML = `${day}/${month}/${year}`;
+  });
+};
+
+fecha();
 //
 //
 //

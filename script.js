@@ -32,26 +32,25 @@ const removeHidden = function (clase, x = false) {
 //LOGIN
 
 //FUNCION PARA ENTRAR A LA CUENTA
-const enterAccount = () => {
-  enterLogin.addEventListener("click", function (e) {
-    const user = inputUser.value;
+// const enterAccount = () => {
+enterLogin.addEventListener("click", function (e) {
+  const user = inputUser.value;
 
-    const pass = inputPassword.value;
+  const pass = inputPassword.value;
 
-    if (user.trim() === "" || pass.trim() === "") return;
+  if (user.trim() === "" || pass.trim() === "") return;
 
-    const checkLogin = cuentas.filter((ele) => {
-      if (ele.user === user && ele.password === pass) return ele;
-    });
-
-    if (checkLogin.length === 1) {
-      //Aqui se validan los datos si coinciden se agregan al array de checkLogin y si este tiene un tamaño igual a 1 significa que si se validaron
-      currentUser.push(checkLogin[0]);
-      //Redireccion a la otra pagina
-      window.location.href = "./mainPage.html";
-    }
+  const checkLogin = cuentas.filter((ele) => {
+    if (ele.user === user && ele.password === pass) return ele;
   });
-};
+
+  if (checkLogin.length === 1) {
+    //Aqui se validan los datos si coinciden se agregan al array de checkLogin y si este tiene un tamaño igual a 1 significa que si se validaron
+    currentUser.push(checkLogin[0]);
+    //Redireccion a la otra pagina
+    window.location.href = "./mainPage.html";
+  }
+});
 
 //FUNCION PARA QUE SE DESPLIEGUE EL LOGIN Y REGISTRO
 
@@ -59,7 +58,7 @@ document.addEventListener("click", function (e) {
   console.log(e.target);
   if (e.target.closest(".btn-login")) {
     removeHidden(".overlay-login");
-    // enterAccount();
+    enterAccount();
   }
   if (e.target.closest(".btn-registrarse")) {
     removeHidden(".overlay-register");

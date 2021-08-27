@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <script src="script.js" defer></script>
-    <form action="inicioSecion.php" method="post" >
+    <!-- <form action="inicioSecion.php" method="post" > -->
   </head>
   <body>
     <nav class="nav"><h1 class="heading-primario">Banco el Generico</h1></nav>
@@ -32,17 +32,28 @@
         </div>
       </div>
       <div class="overlay overlay-login hidden">
-        <form method="POST" action="inicioSesion.php">
+        <!-- <form method="POST" confirma action="inicioSesion.php"> -->
+        <!-- <form> -->
         <div class="login">
           <button class="cerrar" data-tipo=".overlay-login">X</button>
           <label for="usuario">Usuario</label>
-          <input id="usuario" name="usuario" type="text" class="heading-tercero input input-user"  />
+          <input
+            id="usuario"
+            name="usuario"
+            type="text"
+            class="heading-tercero input input-user"
+          />
           <label for="cont">Contraseña</label>
-          <input id="Contraseña" name="cont" type="text" class="heading-tercero input input-password"  />
+          <input
+            id="Contraseña"
+            name="cont"
+            type="password"
+            class="heading-tercero input input-password"
+          />
           <button class="btn btn-login check-login" name="iLogin">
             Iniciar sesión
           </button>
-        </form>
+          <!-- </form> apellido -->
         </div>
       </div>
       <!-- <button class="btn-entrar">Entrar</button> -->
@@ -58,17 +69,17 @@
             class="heading-tercero input input-name"
             required
           />
-          <label for="apellido">Apellido 1</label>
+          <label for="apellido1">Apellido 1</label>
           <input
-            id="apellido"
-            name="apellido"
+            id="apellido1"
+            name="apellido1"
             type="text"
             class="heading-tercero input input-secondName"
           />
-          <label for="apellido">Apellido 2</label>
+          <label for="apellido2">Apellido 2</label>
           <input
-            id="apellido"
-            name="apellido"
+            id="apellido2"
+            name="apellido2"
             type="text"
             class="heading-tercero input input-secondName"
           />
@@ -88,26 +99,26 @@
             class="heading-tercero input input-checkP"
             required
           />
-          <label for="confirma">Cédula</label>
+          <label for="cedula">Cédula</label>
           <input
-            id="confirma"
-            name="confirma"
+            id="cedula"
+            name="cedula"
             type="text"
             class="heading-tercero input input-checkP"
             required
           />
-          <label for="confirma">Teléfono</label>
+          <label for="tel">Teléfono</label>
           <input
-            id="confirma"
-            name="confirma"
+            id="tel"
+            name="tel"
             type="text"
             class="heading-tercero input input-checkP"
             required
           />
-          <label for="confirma">Email</label>
+          <label for="email">Email</label>
           <input
-            id="confirma"
-            name="confirma"
+            id="email"
+            name="email"
             type="text"
             class="heading-tercero input input-checkP"
             required

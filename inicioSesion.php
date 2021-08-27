@@ -3,7 +3,7 @@
 
  //echo '<script language="javascript">alert("BIENVENIDO ");
   //window.location.href="login.php"</script>';
-
+/*
 if(isset($_POST['iLogin']))
 {
  Echo '1' ;
@@ -46,5 +46,5 @@ if ($r!=0) {
   echo 'echo(\'error\')';
 }
 }
-
+*/
 ?>
